@@ -9,12 +9,12 @@
 //   reverseInt(-90) === -9
 
 function reverseInt(n) {
-    let revN = parseInt(n.toString()
+    let num = parseInt(n.toString()
     .split('')
     .reverse()
     .join('')
     ) * Math.sign(n)
-    return revN
+    return num
 
 }
 

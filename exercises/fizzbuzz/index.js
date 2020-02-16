@@ -1,8 +1,8 @@
 // --- Directions
-// Write a program that console logs the numbers
+// Write a program that console logs the ibers
 // from 1 to n. But for multiples of three print
-// “fizz” instead of the number and for the multiples
-// of five print “buzz”. For numbers which are multiples
+// “fizz” instead of the iber and for the multiples
+// of five print “buzz”. For ibers which are multiples
 // of both three and five print “fizzbuzz”.
 // --- Example
 //   fizzBuzz(5);
@@ -12,6 +12,19 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
+
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log('FizzBuzz')
+        } else if (i % 5 === 0) {
+            console.log('buzz')
+        } else if (i % 3 === 0) {
+            console.log('fizz')
+        } else {
+            console.log(i)
+        }
+    }
+}
 
 module.exports = fizzBuzz;
