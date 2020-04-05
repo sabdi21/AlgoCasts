@@ -12,7 +12,7 @@ function palindrome(str) {
     for(let char of str) {
         reversed = char + reversed
     }
-     return reversed === str
+    return reversed === str
     // if(reversed != str) {
     //     return false
     // }
