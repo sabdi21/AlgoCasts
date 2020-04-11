@@ -10,6 +10,24 @@
 //   s.pop(); // returns 2
 //   s.pop(); // returns 1
 
-class Stack {}
+// class function of stack
+class Stack {
+    constructor() {
+        // to initialize the array data
+        this.data = [];
+    }
+
+    push(data) {
+        this.data.push(data);
+    }
+
+    pop() {
+        return this.data.pop();
+    }
+
+    peek(data) {
+        return this.data[this.data.length - 1];
+    }
+}
 
 module.exports = Stack;
